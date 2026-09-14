@@ -1,0 +1,45 @@
+.detail-description {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.detail-description :where(p, li, div, span, td, th) {
+  color: #4e6259 !important;
+  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+}
+
+.detail-description :where(h1, h2, h3, h4) {
+  margin: 2.1rem 0 0.8rem;
+  color: #1e3630 !important;
+  font-family: Fraunces, Georgia, serif !important;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.detail-description h1 {
+  margin-top: 0;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.detail-description h2 { font-size: clamp(1.55rem, 3vw, 2.3rem); }
+.detail-description h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+
+.detail-description :where(h1, h2, h3, h4) :where(span, strong, b) {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.detail-description p { margin: 0 0 1.25rem; }
+.detail-description :where(ul, ol) { margin: 0.25rem 0 1.5rem; padding-left: 1.35rem; }
+.detail-description li { margin: 0.42rem 0; }
+.detail-description :where(strong, b) { color: #1e3630 !important; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .detail-description :where(p, li, div, span, td, th) { font-size: 0.98rem !important; }
+}
