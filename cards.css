@@ -1,0 +1,83 @@
+.massage-card {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid #dce5dd;
+  border-radius: 2px;
+  background: #fffefa;
+  box-shadow: 0 3px 12px rgba(31, 57, 47, 0.05);
+}
+
+.massage-card:hover {
+  transform: translateY(-6px);
+  border-color: #9eb6a8;
+  box-shadow: 0 19px 42px rgba(31, 57, 47, 0.16);
+}
+
+.card-image {
+  height: 178px;
+  overflow: hidden;
+  background: #dbe4db;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.massage-card:hover .card-image img {
+  transform: scale(1.06);
+}
+
+.card-body {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 22px 20px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-body .card-category {
+  margin: 0;
+}
+
+.card-body .number {
+  color: #8da99a;
+  font-size: 0.9rem;
+}
+
+.card-body h3 {
+  margin: 22px 0 9px;
+  font-size: 1.72rem;
+}
+
+.card-body > p:last-of-type {
+  margin: 0;
+  color: #61726b;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.card-link {
+  margin-top: auto;
+  padding-top: 18px;
+  color: #285748;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .card-image { height: 195px; }
+  .card-body { min-height: 205px; }
+}
