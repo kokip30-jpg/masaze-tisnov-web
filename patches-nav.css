@@ -1,0 +1,18 @@
+.mobile-patches {
+  display: none;
+  color: var(--forest);
+  font-size: .72rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    gap: 12px;
+  }
+
+  .mobile-patches {
+    display: block;
+    margin-left: auto;
+  }
+}
